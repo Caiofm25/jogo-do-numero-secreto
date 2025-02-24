@@ -6,7 +6,6 @@ let tentativas = 1;
 function exibirTextoNatela(tag, texto) {
   let campo = document.querySelector(tag);
   campo.innerHTML = texto;
-  // Usando a biblioteca Responsive Voice:
   responsiveVoice.speak(texto, "Brazilian Portuguese Female", { rate: 1.2 });
 }
 
