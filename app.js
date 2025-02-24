@@ -7,17 +7,7 @@ function exibirTextoNatela(tag, texto) {
   let campo = document.querySelector(tag);
   campo.innerHTML = texto;
   // Usando a biblioteca Responsive Voice:
-  // responsiveVoice.speak(texto, "Brazilian Portuguese Female", { rate: 1.2 });
-
-  // Usando a biblioteca Web Speech API, que é uma biblioteca nativa de vários navegadores:
-  // if ("speechSynthesis" in window) {
-  //   let utterance = new SpeechSynthesisUtterance(texto);
-  //   utterance.lang = "pt-BR";
-  //   utterance.rate = 1.2;
-  //   window.speechSynthesis.speak(utterance);
-  // } else {
-  //   console.log("Web Speech API não suportada neste navegador.");
-  // }
+  responsiveVoice.speak(texto, "Brazilian Portuguese Female", { rate: 1.2 });
 }
 
 function exibirMensagemInicial() {
